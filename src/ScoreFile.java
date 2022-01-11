@@ -5,7 +5,7 @@ public class ScoreFile {
         String s = String.valueOf(score);
         try {
             if (score > getScore()) {
-                FileWriter fileWriter = new FileWriter("src/static/score.txt");
+                FileWriter fileWriter = new FileWriter("C:/Users/ll/IdeaProjects/Snake/src/static/score.txt");
                 fileWriter.write(s);
                 fileWriter.flush();
                 fileWriter.close();
@@ -17,7 +17,7 @@ public class ScoreFile {
 
     public int getScore() {
         try {
-            FileReader fileReader = new FileReader("src/static/score.txt");
+            FileReader fileReader = new FileReader("C:/Users/ll/IdeaProjects/Snake/src/static/score.txt");
             BufferedReader bufferedReader = new BufferedReader(fileReader);
             String s = bufferedReader.readLine();
             Integer score = Integer.valueOf(s);
